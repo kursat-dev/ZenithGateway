@@ -1,0 +1,52 @@
+{
+  "keys": [
+    {
+      "id": "1",
+      "key": "admin-key-123",
+      "name": "Default Admin Key",
+      "createdAt": "2025-12-26T19:36:31.275Z"
+    },
+    {
+      "id": "1766778930730",
+      "key": "sk_1xqvo6koa4b",
+      "name": "Test Key",
+      "createdAt": "2025-12-26T19:55:30.730Z"
+    }
+  ],
+  "routes": [
+    {
+      "id": "1766779149413",
+      "path": "/test",
+      "target": "https://jsonplaceholder.typicode.com/posts"
+    }
+  ],
+  "logs": [
+    {
+      "id": "1766779154533",
+      "timestamp": "2025-12-26T19:59:14.533Z",
+      "method": "GET",
+      "path": "/test",
+      "status": 200,
+      "duration": 257,
+      "ip": "::1"
+    },
+    {
+      "id": "1766779149732",
+      "timestamp": "2025-12-26T19:59:09.732Z",
+      "method": "GET",
+      "path": "/test",
+      "status": 200,
+      "duration": 262,
+      "ip": "::1"
+    },
+    {
+      "id": "1766779045673",
+      "timestamp": "2025-12-26T19:57:25.673Z",
+      "method": "GET",
+      "path": "/test",
+      "status": 404,
+      "duration": 0,
+      "ip": "::1"
+    }
+  ]
+}

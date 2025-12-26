@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZenithGateway | API Management Dashboard</title>
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <div class="logo">🌌 ZENITH GATEWAY</div>
+      <div class="badge badge-success">Gateway Status: Online</div>
+    </header>
+
+    <div class="stats-grid">
+      <div class="card glass stat-card">
+        <span class="stat-label">Total Requests</span>
+        <span class="stat-value" id="total-requests">0</span>
+      </div>
+      <div class="card glass stat-card">
+        <span class="stat-label">Avg. Latency</span>
+        <span class="stat-value" id="avg-latency">0 ms</span>
+      </div>
+      <div class="card glass stat-card">
+        <span class="stat-label">Error Rate</span>
+        <span class="stat-value" id="error-rate">0%</span>
+      </div>
+    </div>
+
+    <div class="sections">
+      <div class="config-side">
+        <section class="card glass" style="margin-bottom: 2rem;">
+          <h2>🛡️ API Keys</h2>
+          <div id="keys-list"></div>
+          <hr style="border: 0; border-top: 1px solid var(--border-glass); margin: 1rem 0;">
+          <input type="text" id="new-key-name" placeholder="Key Label (e.g. Mobile App)">
+          <button id="add-key-btn" style="width: 100%;">Generate New Key</button>
+        </section>
+
+        <section class="card glass">
+          <h2>🚦 Active Routes</h2>
+          <div id="routes-list"></div>
+          <hr style="border: 0; border-top: 1px solid var(--border-glass); margin: 1rem 0;">
+          <input type="text" id="route-path" placeholder="/api/v1">
+          <input type="text" id="route-target" placeholder="https://external-api.com">
+          <button id="add-route-btn" style="width: 100%;">Create Proxy Route</button>
+        </section>
+      </div>
+
+      <div class="logs-side">
+        <section class="card glass" style="height: 100%;">
+          <h2>📜 Real-time Logs</h2>
+          <div id="logs-viewer" class="log-viewer">
+            <div class="log-entry">Waiting for traffic...</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
