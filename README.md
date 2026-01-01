@@ -44,7 +44,7 @@ graph TD
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/ZenithGateway.git
+   git clone https://github.com/kursat-dev/ZenithGateway.git
    cd ZenithGateway
    ```
 
